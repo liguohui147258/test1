@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!---->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>李国辉</title>
+    <link rel="shortcut icon" href="Resource/icon.png">
+    <link rel="stylesheet" href="externalStyle.css">
+    <style>
+        .LG_sec1
+        {
+            margin-top: 80px;
+            text-align: center;
+        }
+        .login_div1
+        {
+            height: 100px;
+            background-color: white;
+            width: 90%;
+            margin: 0 auto;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .login_div1 div
+        {
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .login_div1 span
+        {
+            font-size: 20px;
+            padding-left: 20px;
+        }
+        .login_div1 input
+        {
+            background-color: transparent;
+            outline:none;
+            border:none;
+
+        }
+        .button_css
+        {
+            text-align: center;
+            height: 50px;
+            width: 90%;
+            margin:0 auto;
+            margin-top: 30px ;
+            background-color: blue;
+            border-radius: 10px;
+        }
+        .button_css input
+        {
+            color: white;
+            font-size: 20px;
+            width: 90%;
+            line-height: 50px;
+            border: 0;
+            background-color: blue;
+
+        }
+
+
+
+
+
+    </style>
+    <script src="fengzhuang.js"></script>
+    </head>
+    <body style="background-color: #cccccc">
+    <header>登录</header>
+    <section class="LG_sec1">
+        <img src="Resource/head.png" alt="网络不佳">
+    </section>
+    <form>
+        <div class="login_div1">
+            <div style="border-bottom: 1px solid #dddddd">
+            <span>账号：</span>
+        <input id="id1" type="text" value="admin"><br>
+            </div>
+         <div>
+            <span>密码：</span>
+        <input id="id2"type="password" value="admin" ><br>
+         </div>
+        </div>
+        <div class="button_css">
+        <input  id="id3" type="button" value="登录"  >
+        </div>
+        <script>
+            function fan(str) {
+                if(str=="登录成功")
+                {
+                    alert(str);
+                    window.location.href="DropletService.html";
+
+                }
+            }
+var btn = document.getElementById('id3')
+btn.onclick = function () {
+    chuan("login", "post", "username=" + "admin" + "&pwd=" + "admin",fan);
+
+}
+        </script>
+    </form>
+</body>
+<script src="fengzhuang.js"></script>
+</html>
