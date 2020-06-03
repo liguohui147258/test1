@@ -6,6 +6,7 @@
     <title>李国辉</title>
     <link rel="shortcut icon" href="Resource/icon.png">
     <link rel="stylesheet" href="externalStyle.css">
+    <script src="fengzhuang.js"></script>
     <style>
         body{
             margin-top: 44px;
@@ -45,10 +46,10 @@
         getTitle = window.localStorage.getItem("title");
         getSubTitle=window.localStorage.getItem("subTitle");
         getInfo=window.localStorage.getItem("info");
-        title_tag= document.getElementById("id_1");;
-        subTitle_tag = document.getElementById("id_2");
-        info_tag=document.getElementById("id_3");
-        function fun(str) {
+        var  title_tag= document.getElementById("id_1");;
+        var  subTitle_tag = document.getElementById("id_2");
+        var  info_tag=document.getElementById("id_3");
+        function fan(str) {
             title_tag.innerHTML=str.title;
             subTitle_tag.innerHTML=str.subTitle;
             info_tag.innerHTML =str.info;
@@ -63,7 +64,7 @@
             info_tag.innerHTML =getInfo;
         }
         else {
-            chuan("aboutus", "get","",fun);
+            chuan("aboutus", "get","",fan);
         }
 
     </script>
